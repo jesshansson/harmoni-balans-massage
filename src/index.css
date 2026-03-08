@@ -98,4 +98,5 @@
 
 html {
   scrollbar-color: hsl(160 35% 40%) hsl(80 20% 93%);
+  scroll-behavior: smooth;
 }
