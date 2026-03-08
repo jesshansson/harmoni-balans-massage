@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl" />
       <div className="absolute bottom-10 left-10 w-96 h-96 rounded-full bg-accent/5 blur-3xl" />
 
-      <div className="container mx-auto px-6 py-20 text-center relative z-10">
+      <div className="container mx-auto px-6 py-12 text-center relative z-10">
         <img
           src={logo}
           alt={`${siteInfo.businessName} logotyp`}
