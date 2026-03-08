@@ -23,13 +23,11 @@ const Hero = () => {
       </svg>
 
       <div className="container mx-auto px-6 py-12 text-center relative z-10">
-        <div className="animate-float">
-          <img
-            src={logo}
-            alt={`${siteInfo.businessName} logotyp`}
-            className="w-36 h-36 md:w-44 md:h-44 mx-auto mb-5 object-contain drop-shadow-xl"
-          />
-        </div>
+        <img
+          src={logo}
+          alt={`${siteInfo.businessName} logotyp`}
+          className="w-36 h-36 md:w-44 md:h-44 mx-auto mb-5 object-contain drop-shadow-xl"
+        />
         <h1 className="font-display text-4xl md:text-6xl font-semibold text-gradient mb-3 tracking-tight animate-fade-up">
           {siteInfo.businessName}
         </h1>
