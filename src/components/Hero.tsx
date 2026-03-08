@@ -16,7 +16,7 @@ const Hero = () => {
           alt={`${siteInfo.businessName} logotyp`}
           className="w-36 h-36 md:w-44 md:h-44 mx-auto mb-5 object-contain drop-shadow-lg"
         />
-        <h1 className="font-display text-5xl md:text-7xl font-semibold text-gradient mb-4 tracking-tight">
+        <h1 className="font-display text-4xl md:text-6xl font-semibold text-gradient mb-3 tracking-tight">
           {siteInfo.businessName}
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 font-light">
