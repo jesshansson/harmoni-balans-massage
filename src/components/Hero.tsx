@@ -22,7 +22,7 @@ const Hero = () => {
         <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66L7 18.65C9 14.5 13 10 17 8z" />
       </svg>
 
-      <div className="container mx-auto px-6 py-12 text-center relative z-10">
+      <div className="container mx-auto px-6 pt-24 pb-12 text-center relative z-10">
         <img
           src={logo}
           alt={`${siteInfo.businessName} logotyp`}
