@@ -5,7 +5,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[65vh] flex items-center justify-center bg-section-gradient overflow-hidden">
+    <section className="relative min-h-[65vh] flex items-center justify-center bg-section-gradient overflow-hidden pb-20">
       {/* Animated decorative blobs */}
       <div className="absolute top-10 right-0 w-80 h-80 rounded-full bg-primary/8 blur-3xl animate-pulse-soft" />
       <div className="absolute bottom-0 left-0 w-[30rem] h-[30rem] rounded-full bg-accent/6 blur-3xl animate-pulse-soft" style={{ animationDelay: "2s" }} />
