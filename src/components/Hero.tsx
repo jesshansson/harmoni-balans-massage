@@ -19,7 +19,7 @@ const Hero = () => {
         <h1 className="font-display text-4xl md:text-6xl font-semibold text-gradient mb-3 tracking-tight">
           {siteInfo.businessName}
         </h1>
-        <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 font-light">
+        <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto mb-8 font-light">
           {siteInfo.tagline}
         </p>
         <a href={siteInfo.bookingUrl} target="_blank" rel="noopener noreferrer">
