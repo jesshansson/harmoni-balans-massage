@@ -2,7 +2,7 @@ import { aboutMe } from "@/data/siteData";
 
 const About = () => {
   return (
-    <section id="om-mig" className="py-24 px-6">
+    <section id="om-mig" className="py-14 px-6">
       <div className="container mx-auto max-w-3xl text-center">
         <h2 className="font-display text-4xl md:text-5xl font-semibold text-gradient mb-3">
           Om mig
