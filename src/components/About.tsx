@@ -10,7 +10,7 @@ const About = () => {
         <p className="text-sm uppercase tracking-widest text-muted-foreground mb-10">
           {aboutMe.title}
         </p>
-        <div className="space-y-4 text-foreground/80 leading-relaxed text-base md:text-lg">
+        <div className="space-y-3 text-foreground/80 leading-relaxed text-base md:text-lg">
           {aboutMe.description.split("\n\n").map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}
