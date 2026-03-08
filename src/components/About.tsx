@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="om-mig" className="py-14 px-6">
       <div className="container mx-auto max-w-3xl text-center">
-        <h2 className="font-display text-4xl md:text-5xl font-semibold text-gradient mb-3">
+        <h2 className="font-display text-4xl md:text-5xl font-semibold text-gradient mb-2">
           Om mig
         </h2>
         <p className="text-sm uppercase tracking-widest text-muted-foreground mb-10">
