@@ -3,7 +3,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const About = () => {
   return (
-    <section id="om-mig" className="py-14 px-6 relative">
+    <section id="om-mig" className="py-14 px-2 md:px-6 relative">
       {/* Decorative line */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/30 to-transparent" />
 
