@@ -9,7 +9,7 @@ const iconMap: Record<string, LucideIcon> = {
 
 const Treatments = () => {
   return (
-    <section id="behandlingar" className="py-24 px-6 bg-section-gradient relative overflow-hidden">
+    <section id="behandlingar" className="pt-12 pb-24 px-6 bg-section-gradient relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute top-20 right-0 w-64 h-64 rounded-full bg-primary/5 blur-3xl" />
       <div className="absolute bottom-20 left-0 w-48 h-48 rounded-full bg-accent/5 blur-3xl" />
