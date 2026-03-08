@@ -26,7 +26,7 @@ const Hero = () => {
         <img
           src={logo}
           alt={`${siteInfo.businessName} logotyp`}
-          className="w-36 h-36 md:w-56 md:h-56 mx-auto mb-5 object-contain drop-shadow-xl"
+          className="w-44 h-44 md:w-56 md:h-56 mx-auto mb-5 object-contain drop-shadow-xl"
         />
         <h1 className="font-display text-4xl md:text-6xl font-semibold text-gradient mb-3 tracking-tight animate-fade-up">
           {siteInfo.businessName}
