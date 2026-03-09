@@ -5,7 +5,7 @@
 export const siteInfo = {
   businessName: "Harmoni och Balans",
   tagline: "Hitta din inre balans genom helande beröring",
-  bookingUrl: "https://www.bokadirekt.se", // Uppdatera med din Bokadirekt-länk
+  bookingUrl: "https://www.bokadirekt.se/places/harmoni-och-balans-134675",
 };
 
 export const aboutMe = {
