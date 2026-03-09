@@ -11,7 +11,7 @@ export const siteInfo = {
 export const aboutMe = {
   name: "Ditt Namn",
   title: "Diplomerad massageterapeut",
-  description: `Välkommen till Harmoni och Balans! Jag heter [Ditt Namn] och är en passionerad massageterapeut med [X] års erfarenhet. 
+  description: `Välkommen till Harmoni och Balans! Jag heter Annica och är en passionerad massageterapeut med flera års erfarenhet.
 
 Min resa inom massage började med en djup önskan att hjälpa människor att hitta lugn och välmående i sin vardag. Jag har utbildat mig inom flera massagetekniker och skräddarsyr varje behandling efter dina individuella behov.
 
