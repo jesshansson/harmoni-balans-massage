@@ -11,7 +11,7 @@ export const siteInfo = {
 export const aboutMe = {
   name: "Ditt Namn",
   title: "Diplomerad massageterapeut",
-  description: `Välkommen till Harmoni och Balans! Jag heter [Ditt Namn] och är en passionerad massageterapeut med [X] års erfarenhet. 
+  description: `Välkommen till Harmoni och Balans! Jag heter Annica och är en passionerad massageterapeut med flera års erfarenhet.
 
 Min resa inom massage började med en djup önskan att hjälpa människor att hitta lugn och välmående i sin vardag. Jag har utbildat mig inom flera massagetekniker och skräddarsyr varje behandling efter dina individuella behov.
 
@@ -29,48 +29,48 @@ export interface Treatment {
 
 export const treatments: Treatment[] = [
   {
-    id: "klassisk",
-    name: "Klassisk massage",
-    duration: "60 min",
+    id: "relax-ansikte-kropp-fot",
+    name: "Relax - Ansikte, kropp och fot",
+    duration: "80 min",
     price: "850 kr",
     description:
-      "En helkroppsmassage som löser spänningar, förbättrar blodcirkulationen och ger djup avslappning. Perfekt för dig som vill koppla av och ladda om.",
+      "Unna dig, Centrets skönaste behandling.\nDu ligger på en madrass med vibrerande massage för hela kroppen. Nacke, och ben knådas samt även infraljus finns att tillgå. Samtidigt får du först ansiktsmassage, därefter fotmassage.",
     icon: "Hand",
   },
   {
-    id: "djupverkande",
-    name: "Djupverkande massage",
-    duration: "60 min",
+    id: "relax-kropp-fot",
+    name: "Relax - kropp och fot",
+    duration: "45 min",
     price: "950 kr",
     description:
-      "Fokuserar på djupare muskelskikt för att lösa kroniska spänningar och smärta. Rekommenderas vid besvär i nacke, rygg och axlar.",
+      "En skön avkopplande och avstressande behandling.\nDu ligger på en madrass med massage vibrationer för kroppen. Nacke och ben knådas och infraljus finns att tillgå.\nSamtidigt får du en mjuk fotmassage 25 min.",
     icon: "Zap",
   },
   {
-    id: "avslappning",
-    name: "Avslappningsmassage",
-    duration: "50 min",
+    id: "ansiktsmassage",
+    name: "Ansiktsmassage/Naturlig Facelift",
+    duration: "45 min",
     price: "750 kr",
     description:
-      "En mjuk och lugn massage med fokus på avslappning och stressreducering. Ger sinnesro och välbefinnande.",
+      "En varsam och behaglig ansiktsmassage som löser upp spänningar och ger ansiktet ett riktigt lyft.\nDu blir avslappnad och avstressad.\nBlodcirkulationen och den cellulära syresättningen ökar.\nVi använder en mild ekologisk olja med näring samt återuppbyggande effekt på huden.\n\n\nKom gärna utan smink om möjligt, annars ingår lätt rengöring. Ögon makeup är ok.",
     icon: "Leaf",
   },
   {
-    id: "hot-stone",
-    name: "Hot Stone-massage",
-    duration: "75 min",
-    price: "1 100 kr",
+    id: "fotmassage",
+    name: "Fotmassage",
+    duration: "30 min · 400 45 min",
+    price: "550 kr",
     description:
-      "Varma basaltstenar placeras på kroppen och används för att massera musklerna. Värmen tränger djupt in och löser spänningar effektivt.",
+      "Unna dig en skön och avkopplande fotmassage,\nsom lindrar trötta och stela fötter samt får igång blodcirkulationen. Mycket avslappnade.",
     icon: "Flame",
   },
   {
-    id: "gravidmassage",
-    name: "Gravidmassage",
-    duration: "50 min",
+    id: "fotmassage-fotbad",
+    name: "Fotmassage inkl. fotbad i balja",
+    duration: "45 min",
     price: "800 kr",
     description:
-      "Anpassad massage för gravida som lindrar vanliga besvär som ryggont, svullna ben och spänningar. Trygg och skonsam.",
+      "En skön och avslappnande fotmassage som startar med ett fotbad i balja inkl vibrerande massage och infraljus.",
     icon: "Heart",
   },
 ];
