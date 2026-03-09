@@ -76,9 +76,9 @@ export const treatments: Treatment[] = [
 ];
 
 export const contactInfo = {
-  phone: "070-XXX XX XX",
-  email: "info@harmoniochbalans.se",
-  address: "Gatuadress 1, Stad",
+  phone: "073-958 75 25",
+  email: "annica-hansson@hotmail.com",
+  address: "Kungstensgatan 59, 113 29, Stockholm",
   instagram: "", // t.ex. "https://instagram.com/harmoniochbalans"
   facebook: "", // t.ex. "https://facebook.com/harmoniochbalans"
 };
