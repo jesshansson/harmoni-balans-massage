@@ -58,8 +58,8 @@ export const treatments: Treatment[] = [
   {
     id: "fotmassage",
     name: "Fotmassage",
-    duration: "30 min · 400 45 min",
-    price: "550 kr",
+    duration: "30 min",
+    price: "400 kr",
     description:
       "Unna dig en skön och avkopplande fotmassage,\nsom lindrar trötta och stela fötter samt får igång blodcirkulationen. Mycket avslappnade.",
     icon: "Flame",
@@ -68,7 +68,7 @@ export const treatments: Treatment[] = [
     id: "fotmassage-fotbad",
     name: "Fotmassage inkl. fotbad i balja",
     duration: "45 min",
-    price: "800 kr",
+    price: "550 kr",
     description:
       "En skön och avslappnande fotmassage som startar med ett fotbad i balja inkl vibrerande massage och infraljus.",
     icon: "Heart",
