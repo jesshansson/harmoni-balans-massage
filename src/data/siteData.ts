@@ -10,7 +10,7 @@ export const siteInfo = {
 
 export const aboutMe = {
   name: "Ditt Namn",
-  title: "CERTIFIERAD MASSAGETERAPEUTTT",
+  title: "CERTIFIERAD MASSAGETERAPEUTTTT",
   description: `Välkommen till Harmoni och Balans! Jag heter Annica och är en passionerad massageterapeut med flera års erfarenhet.
 
 Min resa inom massage började med en djup önskan att hjälpa människor att hitta lugn och välmående i sin vardag. Jag har utbildat mig inom flera massagetekniker och skräddarsyr varje behandling efter dina individuella behov.
@@ -34,7 +34,7 @@ export const treatments: Treatment[] = [
     duration: "80 min",
     price: "850 kr",
     description:
-      "Unna d centrets skönaste behandling. Du ligger på en madrass med vibrerande massage för hela kroppen. Nacke, och ben knådas samt även infraljus finns att tillgå. Samtidigt får du först ansiktsmassage, därefter fotmassage.",
+      "Unna  centrets skönaste behandling. u ligger på en madrass med vibrerande massage för hela kroppen. Nacke, och ben knådas samt även infraljus finns att tillgå. Samtidigt får du först ansiktsmassage, därefter fotmassage.",
     icon: "Hand",
   },
   {
@@ -43,8 +43,7 @@ export const treatments: Treatment[] = [
     duration: "45 min",
     price: "950 kr",
     description:
-      "En skön avkopplande och avstressande behandling.\ Du ligger på en madrass med massage vibrationer för kroppen. Nacke och ben knådas och infraljus finns att tillgå. Samtidigt får du en mjuk fotmassage",
-    icon: "Zap",
+      "En skön avkopplande och avstressande behandling.\  Du ligger på en madrass med massage vibrationer för kroppen. Nacke och ben knådas och infraljus finns att tillgå. Samtidigt får du en mjuk fotmassagen: "Zap",
   },
   {
     id: "ansiktsmassage",
@@ -52,8 +51,7 @@ export const treatments: Treatment[] = [
     duration: "45 min",
     price: "750 kr",
     description:
-      "En varsam och behaglig ansiktsmassage som löser upp spänningar och ger ansiktet ett riktigt lyft.\nDu blir avslappnad och avstressad.\nBlodcirkulationen och den cellulära syresättningen ökar.\nVi använder en mild ekologisk olja med näring samt återuppbyggande effekt på huden.\n\n\nKom gärna utan smink om möjligt, annars ingår lätt rengöring. Ögon makeup är ok.",
-    icon: "Leaf",
+      "En varsam och behaglig ansiktsmassage som löser upp spänningar och ger ansiktet ett riktigt lyft.\nDu blir  Du blir avslappnad och avstressad. Blodcirkulationen och den cellulära syresättningen ökar. Vi använder en mild ekologisk olja med näring samt återuppbyggande effekt på hudenon: "Leaf",
   },
   {
     id: "fotmassage",
