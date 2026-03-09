@@ -43,7 +43,8 @@ export const treatments: Treatment[] = [
     duration: "45 min",
     price: "950 kr",
     description:
-      "En skön avkopplande och avstressande behandling.\  Du ligger på en madrass med massage vibrationer för kroppen. Nacke och ben knådas och infraljus finns att tillgå. Samtidigt får du en mjuk fotmassagen: "Zap",
+      "En skön avkopplande och avstressande behandling. Du ligger på en madrass med massage vibrationer för kroppen. Nacke och ben knådas och infraljus finns att tillgå. Samtidigt får du en mjuk fotmassage.",
+    icon: "Zap",
   },
   {
     id: "ansiktsmassage",
@@ -51,7 +52,8 @@ export const treatments: Treatment[] = [
     duration: "45 min",
     price: "750 kr",
     description:
-      "En varsam och behaglig ansiktsmassage som löser upp spänningar och ger ansiktet ett riktigt lyft.\nDu blir  Du blir avslappnad och avstressad. Blodcirkulationen och den cellulära syresättningen ökar. Vi använder en mild ekologisk olja med näring samt återuppbyggande effekt på hudenon: "Leaf",
+      "En varsam och behaglig ansiktsmassage som löser upp spänningar och ger ansiktet ett riktigt lyft. Du blir avslappnad och avstressad. Blodcirkulationen och den cellulära syresättningen ökar. Vi använder en mild ekologisk olja med näring samt återuppbyggande effekt på huden.",
+    icon: "Leaf",
   },
   {
     id: "fotmassage",
