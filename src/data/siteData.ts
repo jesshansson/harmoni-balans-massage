@@ -10,7 +10,7 @@ export const siteInfo = {
 
 export const aboutMe = {
   name: "Ditt Namn",
-  title: "CERTIFIERAD MASSAGETERAPEUT",
+  title: "CERTIFIERAD MASSAGETERAPEUTT",
   description: `Välkommen till Harmoni och Balans! Jag heter Annica och är en passionerad massageterapeut med flera års erfarenhet.
 
 Min resa inom massage började med en djup önskan att hjälpa människor att hitta lugn och välmående i sin vardag. Jag har utbildat mig inom flera massagetekniker och skräddarsyr varje behandling efter dina individuella behov.
@@ -34,7 +34,7 @@ export const treatments: Treatment[] = [
     duration: "80 min",
     price: "850 kr",
     description:
-      "Unna dig, Centrets skönaste behandling.\nDu ligger på en madrass med vibrerande massage för hela kroppen. Nacke, och ben knådas samt även infraljus finns att tillgå. Samtidigt får du först ansiktsmassage, därefter fotmassage.",
+      "Unna di centrets skönaste behandling. nDu ligger på en madrass med vibrerande massage för hela kroppen. Nacke, och ben knådas samt även infraljus finns att tillgå. Samtidigt får du först ansiktsmassage, därefter fotmassage.",
     icon: "Hand",
   },
   {
