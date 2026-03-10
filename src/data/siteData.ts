@@ -10,7 +10,7 @@ export const siteInfo = {
 
 export const aboutMe = {
   name: "Ditt Namn",
-  title: "CERTIFIERAD MASSAGETERAPEUTTTT",
+  title: "CERTIFIERAD MASSAGETERAPEUT",
   description: `Välkommen till Harmoni och Balans! Jag heter Annica och är en passionerad massageterapeut med flera års erfarenhet.
 
 Min resa inom massage började med en djup önskan att hjälpa människor att hitta lugn och välmående i sin vardag. Jag ser alltid till helheten men skräddarsyr varje behandling efter dina individuella behov.
