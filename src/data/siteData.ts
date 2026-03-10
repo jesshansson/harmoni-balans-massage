@@ -13,7 +13,7 @@ export const aboutMe = {
   title: "CERTIFIERAD MASSAGETERAPEUTTTT",
   description: `Välkommen till Harmoni och Balans! Jag heter Annica och är en passionerad massageterapeut med flera års erfarenhet.
 
-Min resa inom massage började med en djup önskan att hjälpa människor att hitta lugn och välmående i sin vardag. Jag har utbildat mig inom flera massagetekniker och skräddarsyr varje behandling efter dina individuella behov.
+Min resa inom massage började med en djup önskan att hjälpa människor att hitta lugn och välmående i sin vardag. Jag ser alltid till helheten men skräddarsyr varje behandling efter dina individuella behov.
 
 Mitt mål är att skapa en trygg och avkopplande miljö där du kan släppa vardagens stress och hitta tillbaka till balans.`,
 };
@@ -24,7 +24,7 @@ export interface Treatment {
   duration: string;
   price: string;
   description: string;
-  icon: string; // Lucide icon name
+  icon: string; // Lucide icon name - Zap, Hand, Leaf, Heart.
 }
 
 export const treatments: Treatment[] = [
@@ -44,7 +44,7 @@ export const treatments: Treatment[] = [
     price: "950 kr",
     description:
       "En skön avkopplande och avstressande behandling. Du ligger på en madrass med massage vibrationer för kroppen. Nacke och ben knådas och infraljus finns att tillgå. Samtidigt får du en mjuk fotmassage.",
-    icon: "Zap",
+    icon: "Hand",
   },
   {
     id: "ansiktsmassage",
@@ -62,7 +62,7 @@ export const treatments: Treatment[] = [
     price: "400 kr",
     description:
       "Unna dig en skön och avkopplande fotmassage,\nsom lindrar trötta och stela fötter samt får igång blodcirkulationen. Mycket avslappnade.",
-    icon: "Flame",
+    icon: "Heart",
   },
   {
     id: "fotmassage-fotbad",
