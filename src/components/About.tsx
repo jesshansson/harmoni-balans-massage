@@ -1,5 +1,6 @@
 import { aboutMe } from "@/data/siteData";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import annicaPortrait from "@/assets/annica-2-Photoroom.png";
 
 const About = () => {
   return (
@@ -7,8 +8,8 @@ const About = () => {
       {/* Decorative line */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/30 to-transparent" />
 
-      <div className="container mx-auto max-w-3xl text-center">
-        <AnimateOnScroll>
+      <div className="container mx-auto max-w-6xl">
+        <AnimateOnScroll className="text-center">
           <h2 className="font-display text-4xl md:text-5xl font-semibold text-gradient mb-2">
             Om mig
           </h2>
@@ -17,12 +18,25 @@ const About = () => {
           </p>
         </AnimateOnScroll>
 
-        <div className="space-y-3 text-foreground/80 leading-relaxed text-base md:text-lg">
-          {aboutMe.description.split("\n\n").map((paragraph, i) => (
-            <AnimateOnScroll key={i} delay={i * 150}>
-              <p className="hover:text-foreground transition-colors duration-300">{paragraph}</p>
-            </AnimateOnScroll>
-          ))}
+        <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_320px] md:items-center">
+          <div className="space-y-3 text-foreground/80 leading-relaxed text-base md:text-lg md:text-left md:self-center">
+            {aboutMe.description.split("\n\n").map((paragraph, i) => (
+              <AnimateOnScroll key={i} delay={i * 150}>
+                <p className="hover:text-foreground transition-colors duration-300">{paragraph}</p>
+              </AnimateOnScroll>
+            ))}
+          </div>
+
+          <AnimateOnScroll
+            delay={150}
+            className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-none"
+          >
+            <img
+              src={annicaPortrait}
+              alt="Portrait of Annica"
+              className="w-full h-auto object-contain"
+            />
+          </AnimateOnScroll>
         </div>
 
         {/* Decorative botanical divider */}
