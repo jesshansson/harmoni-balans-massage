@@ -2,4 +2,4 @@
 
 ## Harmoni och Balans 
 
-**See live (and a book massage)**: https://harmoniochbalans.netlify.app/
+**See live (and book a massage)**: https://harmoniochbalans.netlify.app/
