@@ -1,6 +1,6 @@
 import { aboutMe } from "@/data/siteData";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import annicaPortrait from "@/assets/annica-2-Photoroom.png";
+import annicaPortrait from "@/assets/annica.png";
 
 const About = () => {
   return (
