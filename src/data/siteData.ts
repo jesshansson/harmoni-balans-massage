@@ -32,18 +32,18 @@ export const treatments: Treatment[] = [
     id: "relax-ansikte-kropp-fot",
     name: "Relax - Ansikte, kropp och fot",
     duration: "80 min",
-    price: "850 kr",
+    price: "1100 kr",
     description:
-      "Unna  centrets skönaste behandling. u ligger på en madrass med vibrerande massage för hela kroppen. Nacke, och ben knådas samt även infraljus finns att tillgå. Samtidigt får du först ansiktsmassage, därefter fotmassage.",
+      "Vi börjar med en avslappnande ansiktsmassage, därefter en skön fotmassage.Som avslutning ligger du på vår vibrerande madrass som har nackmassage och underbensmassage inkl infrarött ljus.",
     icon: "Hand",
   },
   {
     id: "relax-kropp-fot",
     name: "Relax - kropp och fot",
     duration: "45 min",
-    price: "950 kr",
+    price: "700 kr",
     description:
-      "En skön avkopplande och avstressande behandling. Du ligger på en madrass med massage vibrationer för kroppen. Nacke och ben knådas och infraljus finns att tillgå. Samtidigt får du en mjuk fotmassage.",
+      "En skön avkopplande och avstressande behandling. Du ligger på en madrass med massagevibrationer för kroppen. Nacke och ben knådas och infraljus finns att tillgå. Samtidigt får du en mjuk fotmassage.",
     icon: "Hand",
   },
   {
