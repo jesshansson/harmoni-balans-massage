@@ -18,7 +18,7 @@ const Contact = () => {
           <h2 className="font-display text-4xl md:text-5xl font-semibold text-gradient mb-4">
             Kontakt
           </h2>
-          <p className="text-muted-foreground mb-10">Tveka inte att höra av dig — jag hjälper gärna!</p>
+          <p className="text-muted-foreground mb-10">Tveka inte att höra av dig - jag hjälper gärna!</p>
         </AnimateOnScroll>
 
         <div className="space-y-4">
