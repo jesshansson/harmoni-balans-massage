@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { treatments, siteInfo } from "@/data/siteData";
 import { Hand, Zap, Leaf, Flame, Heart, LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -5,6 +6,49 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const iconMap: Record<string, LucideIcon> = {
   Hand, Zap, Leaf, Flame, Heart,
+};
+
+const renderDescription = (description: string) => {
+  const blocks: ReactNode[] = [];
+  let bulletItems: string[] = [];
+
+  const flushBulletList = () => {
+    if (bulletItems.length === 0) return;
+
+    const items = bulletItems;
+    bulletItems = [];
+
+    blocks.push(
+      <ul key={`list-${blocks.length}`} className="my-3 list-disc space-y-1 pl-5">
+        {items.map((item, index) => (
+          <li key={`${index}-${item}`}>{item}</li>
+        ))}
+      </ul>
+    );
+  };
+
+  description
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .forEach((line) => {
+      if (line.startsWith("- ")) {
+        bulletItems.push(line.slice(2));
+        return;
+      }
+
+      flushBulletList();
+
+      blocks.push(
+        <p key={`paragraph-${blocks.length}`} className="mb-3 last:mb-0">
+          {line}
+        </p>
+      );
+    });
+
+  flushBulletList();
+
+  return blocks;
 };
 
 const Treatments = () => {
@@ -44,9 +88,9 @@ const Treatments = () => {
                     <p className="text-sm text-muted-foreground mb-4 font-medium">
                       {t.duration} · <span className="text-primary">{t.price}</span>
                     </p>
-                    <p className="text-foreground/70 text-sm leading-relaxed">
-                      {t.description}
-                    </p>
+                    <div className="text-foreground/70 text-sm leading-relaxed">
+                      {renderDescription(t.description)}
+                    </div>
                   </div>
                 </div>
               </AnimateOnScroll>
