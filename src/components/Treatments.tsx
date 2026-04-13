@@ -58,14 +58,14 @@ const Treatments = () => {
       <div className="absolute top-20 right-0 w-64 h-64 rounded-full bg-primary/5 blur-3xl" />
       <div className="absolute bottom-20 left-0 w-48 h-48 rounded-full bg-accent/5 blur-3xl" />
 
-      <div className="container mx-auto max-w-5xl relative z-10">
+      <div className="container mx-auto max-w-7xl relative z-10">
         <AnimateOnScroll>
           <h2 className="font-display text-4xl md:text-5xl font-semibold text-gradient text-center mb-16">
             Behandlingar
           </h2>
         </AnimateOnScroll>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {treatments.map((t, index) => {
             const Icon = iconMap[t.icon] || Leaf;
             return (
