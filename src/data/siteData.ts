@@ -1,6 +1,3 @@
-// ============================================
-// REDIGERA DENNA FIL FÖR ATT UPPDATERA WEBBSIDAN
-// ============================================
 
 export const siteInfo = {
   businessName: "Harmoni och Balans",
@@ -34,7 +31,7 @@ export const treatments: Treatment[] = [
     duration: "80 min",
     price: "1100 kr",
     description:
-      "Unna dig en av centrets mest uppskattade behandlingar. Vi börjar med en rogivande ansiktsmassage som hjälper dig att släppa spänningar och landa i lugnet.\n Därefter får dina fötter en mjuk och avslappnande massage. Behandlingen avslutas med en stund på vår vibrerande madrass med skön nack- och underbensmassage samt värmande infrarött ljus - en perfekt stund för total återhämtning.",
+      "Unna dig en av centrets mest uppskattade behandlingar. Behandlingen börjar med en stund på vår vibrerande madrass med skön nack- och underbensmassage samt värmande infrarött ljus. \nDärefter ges en rogivande ansiktsmassage som hjälper dig att släppa spänningar och landa i lugnet. Vi avrundar med en mjuk och avslappnande massage för dina fötter. \nEn perfekt stund för total återhämtning",
     icon: "Hand",
   },
   {
@@ -72,16 +69,16 @@ Vi använder en mild ekologisk olja med näring samt återuppbyggande effekt på
     duration: "30 min",
     price: "400 kr",
     description:
-      "Unna dig en skön och avkopplande fotmassage, som lindrar trötta och stela fötter samt får igång blodcirkulationen. Mycket avslappnade.",
+      "En skön och avslappnande fotmassage som startar med ett fotbad i balja inkl vibrerande massage och infraljus.",
     icon: "Heart",
   },
   {
     id: "fotmassage-fotbad",
     name: "Fotmassage inkl. fotbad i balja",
     duration: "45 min",
-    price: "550 kr",
+    price: "500 kr",
     description:
-      "En skön och avslappnande fotmassage som startar med ett fotbad i balja inkl vibrerande massage och infraljus.",
+      "Avkopplande fotmassage som mjukar upp trötta fötter, ökar cirkulationen och ger dig en stund av total lugn och återhämtning. \nVi startar med ett fotbad i balja inkl vibrerande massage och infraljus.",
     icon: "Heart",
   },
 ];
