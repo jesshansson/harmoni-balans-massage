@@ -6,11 +6,23 @@ interface AnimateOnScrollProps {
   delay?: number;
 }
 
+const prefersReducedMotion = () =>
+  typeof window !== "undefined" &&
+  typeof window.matchMedia === "function" &&
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
 const AnimateOnScroll = ({ children, className = "", delay = 0 }: AnimateOnScrollProps) => {
   const ref = useRef<HTMLDivElement>(null);
+  const [reduceMotion, setReduceMotion] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    if (prefersReducedMotion()) {
+      setReduceMotion(true);
+      setIsVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -24,6 +36,14 @@ const AnimateOnScroll = ({ children, className = "", delay = 0 }: AnimateOnScrol
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
+
+  if (reduceMotion) {
+    return (
+      <div ref={ref} className={className}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <div
