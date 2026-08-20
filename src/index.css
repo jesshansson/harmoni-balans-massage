@@ -100,3 +100,35 @@ html {
   scrollbar-color: hsl(160 35% 40%) hsl(80 20% 93%);
   scroll-behavior: smooth;
 }
+
+/* Visible keyboard focus */
+:where(a, button, [tabindex]):focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 3px;
+  border-radius: 0.375rem;
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-fade-up,
+  .animate-float,
+  .animate-leaf-drift,
+  .animate-pulse-soft {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
