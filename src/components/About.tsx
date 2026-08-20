@@ -1,6 +1,6 @@
 import { aboutMe } from "@/data/siteData";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import annicaPortrait from "@/assets/annica.png";
+import annicaPortrait from "@/assets/annica.webp";
 
 const About = () => {
   return (
@@ -33,7 +33,11 @@ const About = () => {
           >
             <img
               src={annicaPortrait}
-              alt="Portrait of Annica"
+              alt="Annica Hansson, certifierad massageterapeut på Harmoni och Balans"
+              width={736}
+              height={736}
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto object-contain"
             />
           </AnimateOnScroll>

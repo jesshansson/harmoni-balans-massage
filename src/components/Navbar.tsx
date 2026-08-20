@@ -36,14 +36,17 @@ const Navbar = () => {
             className="text-sm font-medium bg-hero-gradient text-primary-foreground px-5 py-2 rounded-full hover:opacity-90 transition-opacity"
           >
             Boka tid
+            <span className="sr-only">(öppnas i ny flik på Bokadirekt)</span>
           </a>
         </div>
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-foreground"
+          className="md:hidden text-foreground inline-flex items-center justify-center min-h-11 min-w-11"
           onClick={() => setOpen(!open)}
           aria-label="Meny"
+          aria-expanded={open}
+          aria-controls="mobil-meny"
         >
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -51,13 +54,16 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-background border-b border-border px-6 pb-6 space-y-4">
+        <div
+          id="mobil-meny"
+          className="md:hidden bg-background border-b border-border px-6 pb-6 space-y-4"
+        >
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block text-foreground/80 hover:text-primary transition-colors"
+              className="block text-foreground/80 hover:text-primary transition-colors py-2"
             >
               {l.label}
             </a>
@@ -69,6 +75,7 @@ const Navbar = () => {
             className="block text-center font-medium bg-hero-gradient text-primary-foreground px-5 py-2 rounded-full"
           >
             Boka tid
+            <span className="sr-only">(öppnas i ny flik på Bokadirekt)</span>
           </a>
         </div>
       )}
