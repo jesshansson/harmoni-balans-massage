@@ -83,8 +83,8 @@ const TreatmentCard = ({ treatment }: { treatment: (typeof treatments)[number] }
 };
 
 const Treatments = () => {
-  const standardTreatments = treatments.slice(0, -2);
-  const footMassageTreatments = treatments.slice(-2);
+  const standardTreatments = treatments.filter((t) => t.group === "standard");
+  const footMassageTreatments = treatments.filter((t) => t.group === "fotmassage");
 
   return (
     <section id="behandlingar" className="pt-12 pb-24 px-6 bg-section-gradient relative overflow-hidden">
@@ -99,6 +99,12 @@ const Treatments = () => {
           </h2>
         </AnimateOnScroll>
 
+        {standardTreatments.length === 0 && (
+          <p className="text-center text-muted-foreground">
+            Behandlingar uppdateras just nu. Kontakta mig gärna för aktuellt utbud.
+          </p>
+        )}
+
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {standardTreatments.map((treatment, index) => (
             <AnimateOnScroll key={treatment.id} delay={index * 100}>
@@ -107,25 +113,30 @@ const Treatments = () => {
           ))}
         </div>
 
-        <AnimateOnScroll delay={200}>
-          <h3 className="font-display text-3xl  font-semibold text-foreground text-center mt-16 mb-8">
-            Fotmassage
-          </h3>
-        </AnimateOnScroll>
-
-        <div className="grid gap-8 md:grid-cols-2">
-          {footMassageTreatments.map((treatment, index) => (
-            <AnimateOnScroll key={treatment.id} delay={index * 100}>
-              <TreatmentCard treatment={treatment} />
+        {footMassageTreatments.length > 0 && (
+          <>
+            <AnimateOnScroll delay={200}>
+              <h3 className="font-display text-3xl font-semibold text-foreground text-center mt-16 mb-8">
+                Fotmassage
+              </h3>
             </AnimateOnScroll>
-          ))}
-        </div>
+
+            <div className="grid gap-8 md:grid-cols-2">
+              {footMassageTreatments.map((treatment, index) => (
+                <AnimateOnScroll key={treatment.id} delay={index * 100}>
+                  <TreatmentCard treatment={treatment} />
+                </AnimateOnScroll>
+              ))}
+            </div>
+          </>
+        )}
 
         <AnimateOnScroll delay={200}>
           <div className="text-center mt-14">
             <a href={siteInfo.bookingUrl} target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="group bg-hero-gradient text-primary-foreground hover:opacity-90 hover:scale-105 active:scale-95 transition-all duration-300 rounded-full px-8 py-6 shadow-lg hover:shadow-xl">
                 Boka p&aring; Bokadirekt
+                <span className="sr-only">(öppnas i ny flik)</span>
               </Button>
             </a>
           </div>

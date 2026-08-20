@@ -1,7 +1,8 @@
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.webp";
 import { siteInfo } from "@/data/siteData";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import TrustRow from "@/components/TrustRow";
 
 const Hero = () => {
   return (
@@ -26,6 +27,10 @@ const Hero = () => {
         <img
           src={logo}
           alt={`${siteInfo.businessName} logotyp`}
+          width={497}
+          height={466}
+          loading="eager"
+          decoding="async"
           className="w-44 h-44 md:w-56 md:h-56 mx-auto mb-5 object-contain drop-shadow-xl"
         />
         <h1 className="font-display text-4xl md:text-6xl font-semibold text-gradient mb-3 tracking-tight animate-fade-up">
@@ -40,8 +45,13 @@ const Hero = () => {
               <Sparkles className="mr-2 h-4 w-4 group-hover:animate-spin" />
               Boka behandling
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <span className="sr-only">(öppnas i ny flik på Bokadirekt)</span>
             </Button>
           </a>
+        </div>
+
+        <div className="mt-10">
+          <TrustRow />
         </div>
       </div>
 

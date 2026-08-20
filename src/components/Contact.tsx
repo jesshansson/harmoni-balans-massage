@@ -62,6 +62,7 @@ const Contact = () => {
               <Button size="lg" className="group bg-hero-gradient text-primary-foreground hover:opacity-90 hover:scale-105 active:scale-95 transition-all duration-300 rounded-full px-8 py-6 shadow-lg hover:shadow-xl">
                 <ExternalLink className="mr-2 h-4 w-4" />
                 Boka tid på Bokadirekt
+                <span className="sr-only">(öppnas i ny flik)</span>
               </Button>
             </a>
           </div>
