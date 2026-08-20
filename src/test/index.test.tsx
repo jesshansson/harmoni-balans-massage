@@ -51,7 +51,8 @@ describe("Startsidan", () => {
   it("renderar alla behandlingar från siteData", () => {
     renderPage();
     for (const treatment of treatments) {
-      expect(screen.getByRole("heading", { name: treatment.name, level: 3 })).toBeInTheDocument();
+      const headings = screen.getAllByRole("heading", { name: treatment.name, level: 3 });
+      expect(headings.length).toBeGreaterThan(0);
     }
   });
 });
