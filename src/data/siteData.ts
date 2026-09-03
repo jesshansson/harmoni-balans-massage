@@ -73,8 +73,8 @@ Vi använder en mild ekologisk olja med näring samt återuppbyggande effekt på
    {
     id: "harmonistunden",
     name: "Harmonistunden",
-    duration: "45 min",
-    price: "750 kr",
+    duration: "70 min",
+    price: "1395 kr",
     description:
       "70 minuter av värme, beröring och djup återhämtning. \nHarmonistunden är vår signaturbehandling för dig som längtar efter att få stänga ute vardagen och bli omhändertagen från topp till tå.\nBehandlingen inleds med en varsam och behaglig ansiktsmassage som löser upp spänningar och ger ansiktet ett riktigt lyft samt hjälper dig att landa i lugn och ro. Genom mjuka, medvetna grepp frigörs spänningar i ansikte och käkar, vilket bidrar till att hela kroppen sjunker djupare in i avslappning, avslutas med rogivande skalpmassage. Därefter massage för armar och händer, sänker stresshormonerna i kroppen. Avslutar med fotmassage som tar dig ännu en nivå djupare i avslappning och återhämtning. Varma handdukar, och mjuka rörelser förstärker känslan av vila och hjälper kroppen att växla ner. \nI Harmonistunden ingår \n• Ansiktsmassage  \n• Skalpmassage \n• Massage av armar och händer \n• Fotmassage \n• Varma handdukar \n• En lugn avslutning med vatten eller en kopp te. \nDu lämnar behandlingen med mjukare muskler, lättare fötter och en behaglig känsla av lugn i hela kroppen.",
     group: "standard",
