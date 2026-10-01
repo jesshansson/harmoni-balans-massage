@@ -105,9 +105,9 @@ const Treatments = () => {
           </p>
         )}
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="columns-1 gap-8 md:columns-2 xl:columns-3">
           {standardTreatments.map((treatment, index) => (
-            <AnimateOnScroll key={treatment.id} delay={index * 100}>
+            <AnimateOnScroll key={treatment.id} delay={index * 100} className="mb-8 break-inside-avoid">
               <TreatmentCard treatment={treatment} />
             </AnimateOnScroll>
           ))}
@@ -121,9 +121,9 @@ const Treatments = () => {
               </h3>
             </AnimateOnScroll>
 
-            <div className="grid gap-8 md:grid-cols-2">
+            <div className="columns-1 gap-8 md:columns-2">
               {footMassageTreatments.map((treatment, index) => (
-                <AnimateOnScroll key={treatment.id} delay={index * 100}>
+                <AnimateOnScroll key={treatment.id} delay={index * 100} className="mb-8 break-inside-avoid">
                   <TreatmentCard treatment={treatment} />
                 </AnimateOnScroll>
               ))}
